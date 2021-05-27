@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/segments/fragments :: html_head">
+
+
+</head>
+<body>
+
+<div th:replace="/segments/fragments :: menu"></div>
+
+<p>Zalogowano Poprawnie</p>
+
+<form action="logmeout" th:action="@{/logmeout}" method="post" >
+    <input type="submit" value="Log me out" />
+</form>
+
+<div th:replace="/segments/fragments :: footer"></div>
+
+
+</body>
+</html>
+
